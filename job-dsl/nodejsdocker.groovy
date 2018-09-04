@@ -14,7 +14,7 @@ job('NodeJS-Docker-Example-003') {
     }
     steps {
         dockerBuildAndPublish {
-            repositoryName('11davel/docker-upload2')
+            repositoryName('11davel/docker-upload3')
             tag('${GIT_REVISION,length=9}')
             registryCredentials('dockerhub')
             forcePull(false)
